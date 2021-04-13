@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "videoLlamada"
-  spec.version      = "0.1.2"
+  spec.version      = "0.1.3"
   spec.summary      = "A short description of videoLlamada."
 
   # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
   spec.description  = <<-DESC
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/videoLlamada"
+  spec.homepage     = "https://github.com/elPutas/videoLlamada2.0"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/elPutas/videoLlamada.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/elPutas/videoLlamada2.0.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
