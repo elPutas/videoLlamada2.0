@@ -1,0 +1,6 @@
+module Pods_videoLlamada {
+  umbrella header "Pods-videoLlamada-umbrella.h"
+
+  export *
+  module * { export * }
+}
