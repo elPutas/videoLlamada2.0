@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "videoLlamada"
-  spec.version      = "0.3.0"
+  spec.version      = "0.3.1"
   spec.summary      = "videoLlamada pod"
 
   # This description is used to generate tags and improve search results.
@@ -105,7 +105,7 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-    spec.resources = "videoLlamada/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+    spec.resources = "videoLlamada/**/*"
 
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
@@ -121,7 +121,7 @@ Pod::Spec.new do |spec|
 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
-    spec.frameworks = 'UIKit', 'MobileRTC'
+    spec.frameworks = 'UIKit', 'MobileRTC', 'Foundation'
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
@@ -136,13 +136,11 @@ Pod::Spec.new do |spec|
    spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-    spec.dependency 'JSONKit', '~> 1.4'
+    
     spec.dependency 'SDWebImage', '~> 5.0'
     spec.dependency 'DateScrollPicker', '~> 1.0.3'
-    spec.dependency 'Firebase/Core', '~> 6.13.0'
-    spec.dependency 'Firebase/Firestore', '~> 6.13.0'
-    spec.dependency 'Firebase/Auth', '~> 6.13.0'
-    spec.dependency 'Firebase/Analytics', '~> 6.13.0'
-    spec.dependency 'Firebase/Performance', '~> 6.13.0'
+    spec.dependency 'Firebase/Core'
+    spec.dependency 'Firebase/Firestore'
+    spec.dependency 'Firebase/Auth'
 
 end
