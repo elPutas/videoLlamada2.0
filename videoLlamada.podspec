@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "videoLlamada"
-  spec.version      = "0.2.1"
+  spec.version      = "0.3.0"
   spec.summary      = "videoLlamada pod"
 
   # This description is used to generate tags and improve search results.
@@ -91,8 +91,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "videoLlamada/**/*"
+  # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -104,6 +104,8 @@ Pod::Spec.new do |spec|
   #  You can preserve files from being cleaned, please don't preserve
   #  non-essential files like tests, examples and documentation.
   #
+
+    spec.resources = "videoLlamada/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
