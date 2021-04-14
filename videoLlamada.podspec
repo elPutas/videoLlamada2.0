@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "videoLlamada"
-  spec.version      = "0.1.3"
-  spec.summary      = "A short description of videoLlamada."
+  spec.version      = "0.1.4"
+  spec.summary      = "videoLlamada pod"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,8 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                   DESC
+  Library from ZOOM SDK to Colegium
+  DESC
 
   spec.homepage     = "https://github.com/elPutas/videoLlamada2.0"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -38,8 +39,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  #spec.license      = "MIT (example)"
+   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -57,14 +58,14 @@ Pod::Spec.new do |spec|
   # spec.authors            = { "Gio" => "gevaldes@colegium.com" }
   # spec.social_media_url   = "https://twitter.com/Gio"
 
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  # ――― Platform Specifics ―――――――――――――――――――――――――――――――――――――――――――――――――――――――
   #
   #  If this Pod runs only on iOS or OS X, then specify the platform and
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-    spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  #  spec.platform     = :ios
+   spec.platform     = :ios, "13.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -118,6 +119,7 @@ Pod::Spec.new do |spec|
 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
+    spec.frameworks = 'UIKit', 'MobileRTC'
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
@@ -129,16 +131,16 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+   spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
-  s.dependency 'SDWebImage', '~> 5.0'
-  s.dependency 'DateScrollPicker', '~> 1.0.3'
-  s.dependency 'Firebase/Core', '~> 6.13.0'
-  s.dependency 'Firebase/Firestore', '~> 6.13.0'
-  s.dependency 'Firebase/Auth', '~> 6.13.0'
-  s.dependency 'Firebase/Analytics', '~> 6.13.0'
-  s.dependency 'Firebase/Performance', '~> 6.13.0'
+    spec.dependency 'JSONKit', '~> 1.4'
+    spec.dependency 'SDWebImage', '~> 5.0'
+    spec.dependency 'DateScrollPicker', '~> 1.0.3'
+    spec.dependency 'Firebase/Core', '~> 6.13.0'
+    spec.dependency 'Firebase/Firestore', '~> 6.13.0'
+    spec.dependency 'Firebase/Auth', '~> 6.13.0'
+    spec.dependency 'Firebase/Analytics', '~> 6.13.0'
+    spec.dependency 'Firebase/Performance', '~> 6.13.0'
 
 end
