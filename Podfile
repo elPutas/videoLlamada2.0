@@ -6,7 +6,7 @@ target 'videoLlamada' do
   # Pods for videoLlamada
   pod 'SDWebImage', :modular_headers => true
   pod 'DateScrollPicker', '~> 1.0.3', :modular_headers => true
-  pod 'Firebase/Core'
+  pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
 

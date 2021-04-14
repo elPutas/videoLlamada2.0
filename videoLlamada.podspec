@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "videoLlamada"
-  spec.version      = "0.3.1"
+  spec.version      = "0.3.2"
   spec.summary      = "videoLlamada pod"
 
   # This description is used to generate tags and improve search results.
@@ -65,7 +65,8 @@ Pod::Spec.new do |spec|
   #
 
   #  spec.platform     = :ios
-   spec.platform     = :ios, "13.0"
+    spec.platform     = :ios, "13.0"
+    spec.swift_version = "4.2"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -122,6 +123,7 @@ Pod::Spec.new do |spec|
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
     spec.frameworks = 'UIKit', 'MobileRTC', 'Foundation'
+    spec.static_framework = true
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
@@ -139,8 +141,8 @@ Pod::Spec.new do |spec|
     
     spec.dependency 'SDWebImage', '~> 5.0'
     spec.dependency 'DateScrollPicker', '~> 1.0.3'
-    spec.dependency 'Firebase/Core'
+    
     spec.dependency 'Firebase/Firestore'
     spec.dependency 'Firebase/Auth'
-
+    spec.dependency 'Firebase/Analytics'
 end

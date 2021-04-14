@@ -219,6 +219,8 @@ PODS:
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
   - DateScrollPicker (1.0.3)
+  - Firebase/Analytics (6.31.1):
+    - Firebase/Core
   - Firebase/Auth (6.31.1):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.9.0)
@@ -335,8 +337,8 @@ PODS:
 
 DEPENDENCIES:
   - DateScrollPicker (~> 1.0.3)
+  - Firebase/Analytics
   - Firebase/Auth
-  - Firebase/Core
   - Firebase/Firestore
   - SDWebImage
 
@@ -385,6 +387,6 @@ SPEC CHECKSUMS:
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
 
-PODFILE CHECKSUM: 0dae9eabed36579785f36b47be8dd43e4ae8ac18
+PODFILE CHECKSUM: 72523d18940f973daee5de2dff88c8015fd58260
 
 COCOAPODS: 1.10.1
